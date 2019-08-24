@@ -58,7 +58,7 @@
 	<div class="se-pre-con"></div>
 	<div class="wrapper">
 
-		<%-- <!-- Navigation -->
+		<!-- Navigation -->
 		<%@include file="./shared/navbar.jsp"%>
 
 		<!-- Page Content -->
@@ -70,7 +70,7 @@
 				<%@include file="home.jsp"%>
 			</c:if>
 
-			<!-- Load only when user clicks about -->
+		 	<!-- Load only when user clicks about -->
 			<c:if test="${userClickAbout == true }">
 				<%@include file="about.jsp"%>
 			</c:if>
@@ -80,7 +80,7 @@
 				<%@include file="contact.jsp"%>
 			</c:if>
 			
-			<!-- Load only when user clicks contact -->
+		 	<%-- <!-- Load only when user clicks contact -->
 			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
 				<%@include file="listProducts.jsp"%>
 			</c:if>	
@@ -99,13 +99,13 @@
 			<!-- Load only when user clicks manage product -->
 			<c:if test="${userClickShowCart == true}">
 				<%@include file="cart.jsp"%>
-			</c:if>	
+			</c:if>	  --%>
 
 		</div>
 
 
 		<!-- Footer comes here -->
-		<%@include file="./shared/footer.jsp"%> --%>
+		<%@include file="./shared/footer.jsp"%> 
 
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
