@@ -12,7 +12,16 @@
 		<javaee.version>7.0</javaee.version>
 		<spring.version>4.3.9.RELEASE</spring.version>
 	</properties>
+
 	<dependencies>
+	<!-- Link Backend project -->
+		<dependency>
+			<groupId>com.sai</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -20,14 +29,14 @@
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<!--  spring-webmvc -->
+		<!-- spring-webmvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-			<!--  jstl -->
+
+		<!-- jstl -->
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
